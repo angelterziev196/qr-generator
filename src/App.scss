@@ -1,1 +1,42 @@
-@import '/src/qr-gen/gr-gen.scss';
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+
+    &-wrapper {
+        background-color: orangered;
+        width: 400px;
+        height: 100vh;
+        color: white;
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            input {
+                border-radius: 5px;
+                border: 1px solid transparent;
+                padding: 5px;
+                width: 70%;
+            }
+            button {
+                cursor: pointer;
+                border: 1px solid transparent;
+                border-radius: 5px;
+                color: white;
+                background-color: black;
+                padding: 5px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                width: 50%;
+                &:hover {
+                    background-color: darkgray;
+                    transition: background-color 0.5s;
+                }
+            }
+        }
+    }
+}
